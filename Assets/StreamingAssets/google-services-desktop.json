@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "909967564502",
+    "project_id": "jungledef",
+    "storage_bucket": "jungledef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:909967564502:android:59f0f429b555c078953377",
+        "android_client_info": {
+          "package_name": "com.epf.jungledef"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHxpZmh7bWdKct7dhi6RWpg0twPtrL7UI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
