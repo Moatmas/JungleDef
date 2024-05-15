@@ -99,20 +99,26 @@
 
         }
 
-        public void LoginUser()
+       public void LoginUser()
+{
+    string email = loginEmailField.text.Trim();
+    string password = loginPasswordField.text.Trim();
+
+    if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
     {
-        string email = loginEmailField.text.Trim();
-        string password = loginPasswordField.text.Trim();
-
-        if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
-        {
-            ShowNotification("Erreur", "Champs vides! Veuillez saisir tous les détails");
-            return;
-        }
-
-        var request = new LoginWithEmailAddressRequest { Email = email, Password = password };
-        PlayFabClientAPI.LoginWithEmailAddress(request, OnLoginSuccess, OnLoginFailure);
+        ShowNotification("Erreur", "Champs vides! Veuillez saisir tous les détails");
+        return;
     }
+
+    if (!IsValidEmail(email))
+    {
+        ShowNotification("Erreur", "Format d'email invalide! Veuillez saisir une adresse email valide.");
+        return;
+    }
+
+    var request = new LoginWithEmailAddressRequest { Email = email, Password = password };
+    PlayFabClientAPI.LoginWithEmailAddress(request, OnLoginSuccess, OnLoginFailure);
+}
 
     private void OnLoginSuccess(LoginResult result)
     {
@@ -121,20 +127,27 @@
         ResetInputFields();
     }
 
-    private void OnLoginFailure(PlayFabError error)
+   private void OnLoginFailure(PlayFabError error)
+{
+    if (error.Error == PlayFabErrorCode.AccountNotFound)
     {
-        if (error.Error == PlayFabErrorCode.AccountNotFound)
-        {
-            ShowNotification("Erreur", "Utilisateur non trouvé. Veuillez vérifier votre email et votre mot de passe.");
-            ResetInputFields();
-        }
-        else
-        {
-            Debug.LogError("Erreur de connexion : " + error.ErrorMessage);
-            ShowNotification("Erreur", "Erreur de connexion. Veuillez réessayer.");
-            ResetInputFields();
-        }
+        ShowNotification("Erreur", "Utilisateur non trouvé. Veuillez vérifier votre email et votre mot de passe.");
+        ResetInputFields();
     }
+    else if (error.ErrorMessage == "Invalid email address or password")
+    {
+        ShowNotification("Erreur", "Adresse email ou mot de passe incorrect.");
+        ResetInputFields();
+    }
+    else
+    {
+        string errorMessage = "Erreur de connexion : " + error.ErrorMessage;
+        Debug.LogError(errorMessage);
+        ShowNotification("Erreur", "Erreur de connexion. Veuillez réessayer.");
+        ResetInputFields();
+    }
+}
+
 private void ResetInputFields()
     {
         // Réinitialiser tous les champs d'entrée à une chaîne vide
@@ -214,9 +227,22 @@ private void ResetInputFields()
         }
 
         private void OnSignupFailure(PlayFabError error)
-        {
-            Debug.LogError("Erreur d'inscription : " + error.ErrorMessage);
-        }
+{
+    if (error.Error == PlayFabErrorCode.EmailAddressNotAvailable)
+    {
+        ShowNotification("Erreur", "L'adresse email est déjà associée à un compte. Veuillez en choisir une autre.");
+    }
+    else if (error.Error == PlayFabErrorCode.UsernameNotAvailable)
+    {
+        ShowNotification("Erreur", "Ce nom d'utilisateur est déjà pris. Veuillez en choisir un autre.");
+    }
+    else
+    {
+        Debug.LogError("Erreur d'inscription : " + error.ErrorMessage);
+        ShowNotification("Erreur", "Erreur d'inscription. Veuillez réessayer.");
+    }
+}
+
 
         public void ForgetPassword()
         {
