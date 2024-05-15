@@ -11,27 +11,37 @@ public class Bloc : MonoBehaviour
     private Renderer rend;
     private Color startColor;
 
+    BuildManager buildManager;
 
     void Start()
     {
         rend = GetComponent<Renderer>();
         startColor = rend.materials[1].color;
+
+        buildManager = BuildManager.instance;
     }
 
     void OnMouseDown()
     {
+        if (buildManager.GetTurretToBuild() == null)
+            return;
+
         if (turret != null)
         {
             Debug.Log("Impossible de construire ici");
             return;
         }
 
-        GameObject turretToBuild = BuildManager.instance.GetTurretToBuild();
+        GameObject turretToBuild = buildManager.GetTurretToBuild();
+
         turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset,transform.rotation);
     }
 
     void OnMouseOver()
     {
+        if (buildManager.GetTurretToBuild() == null)
+            return;
+
         rend.materials[1].color = overColor;
     }
 

@@ -16,16 +16,19 @@ public class BuildManager : MonoBehaviour
 
 
     public GameObject standardTurretAsset;
+    public GameObject missileTurretAsset;
 
-    void Start()
-    {
-        turretToBuild = standardTurretAsset;
-    }
+   
 
     private GameObject turretToBuild;
 
     public GameObject GetTurretToBuild()
     {
         return turretToBuild;
+    }
+
+    public void SetTurretToBuild(GameObject turret)
+    {
+        turretToBuild = turret;
     }
 }
