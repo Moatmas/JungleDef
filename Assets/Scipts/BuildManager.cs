@@ -8,7 +8,7 @@ public class BuildManager : MonoBehaviour
     {   
         if (instance != null)
         {
-            Debug.Log("Il y a déjà un menu de construction");
+            Debug.Log("Il y a dï¿½jï¿½ un menu de construction");
             return;
         }
         instance = this;
@@ -20,14 +20,26 @@ public class BuildManager : MonoBehaviour
 
    
 
-    private GameObject turretToBuild;
+    private TurretBlueprint turretToBuild;
 
-    public GameObject GetTurretToBuild()
+    public bool CanBuild { get { return turretToBuild != null; } }
+
+    public void BuildTurretOn (Bloc bloc) 
     {
-        return turretToBuild;
+        if (PlayerStats.Money < turretToBuild.cost)
+        {
+            Debug.Log ("Pas assez d'argent pour acheter ceci!");
+            return;
+        }
+
+        PlayerStats.Money -= turretToBuild.cost;
+        GameObject turret = (GameObject)Instantiate(turretToBuild.prefab, bloc.getBuildPosition(), Quaternion.identity);
+        bloc.turret = turret;
+
+        Debug.Log ("Tour construite, argent restant : " + PlayerStats.Money);
     }
 
-    public void SetTurretToBuild(GameObject turret)
+    public void SelectTurretToBuild (TurretBlueprint turret)
     {
         turretToBuild = turret;
     }

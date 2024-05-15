@@ -6,7 +6,8 @@ public class Bloc : MonoBehaviour
     public Color overColor;
     public Vector3 positionOffset;
 
-    private GameObject turret;
+    [Header("Optional")]
+    public GameObject turret;
 
     private Renderer rend;
     private Color startColor;
@@ -21,9 +22,13 @@ public class Bloc : MonoBehaviour
         buildManager = BuildManager.instance;
     }
 
+    public Vector3 getBuildPosition (){
+        return transform.position + positionOffset;
+    }
+
     void OnMouseDown()
     {
-        if (buildManager.GetTurretToBuild() == null)
+        if (!buildManager.CanBuild)
             return;
 
         if (turret != null)
@@ -32,14 +37,12 @@ public class Bloc : MonoBehaviour
             return;
         }
 
-        GameObject turretToBuild = buildManager.GetTurretToBuild();
-
-        turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset,transform.rotation);
+        buildManager.BuildTurretOn(this);
     }
 
     void OnMouseOver()
     {
-        if (buildManager.GetTurretToBuild() == null)
+        if (!buildManager.CanBuild)
             return;
 
         rend.materials[1].color = overColor;
