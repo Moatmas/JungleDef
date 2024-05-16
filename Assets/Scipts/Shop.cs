@@ -13,13 +13,13 @@ public class Shop : MonoBehaviour
     }
     public void SelectStandardTurret()
     {
-        Debug.Log("Tour Standard s�lectionn�e");
+        Debug.Log("Tour Standard selectionnee");
         buildManager.SelectTurretToBuild(standardTurret);
     }
 
     public void SelectMissileTurret()
     {
-        Debug.Log("Tour Missile s�lectionn�e");
+        Debug.Log("Tour Missile selectionnee");
         buildManager.SelectTurretToBuild(missileLauncher);
     }
 }
