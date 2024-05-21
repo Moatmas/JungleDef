@@ -4,6 +4,8 @@ using UnityEngine.UI;
 public class SelectUI : MonoBehaviour
 {
     public TextMeshProUGUI upgradeCost;
+    public TextMeshProUGUI sellAmount;
+
     public Button upgradeButton;
     public GameObject ui;
     private Bloc target;
@@ -25,6 +27,8 @@ public class SelectUI : MonoBehaviour
             upgradeButton.interactable = false; 
         }
 
+        sellAmount.text = target.turretBlueprint.GetSellAmount() + "$";
+
         ui.SetActive(true);
     }
     
@@ -36,6 +40,12 @@ public class SelectUI : MonoBehaviour
     public void Upgrade()
     {
         target.UpgradeTurret();
+        BuildManager.instance.DeselectBloc();
+    }
+
+    public void Sell()
+    {
+        target.SellTurret();
         BuildManager.instance.DeselectBloc();
     }
 }

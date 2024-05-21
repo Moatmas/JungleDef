@@ -64,6 +64,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   standardTurretAsset: {fileID: 1521401170767942808, guid: 08c914209a529cb4d8cca6fd06182b30, type: 3}
   missileTurretAsset: {fileID: 61456485529120384, guid: 758a0484b342da644acc02cf828a7760, type: 3}
+  sellEffect: {fileID: 8387399027378844438, guid: 1b8900e9f347fc747adfadf0fef6a093, type: 3}
   selectUI: {fileID: 4967393488071808663, guid: b30da702ae4ce414eb14db52c0d6991f, type: 3}
 --- !u!114 &44181183354536741
 MonoBehaviour:

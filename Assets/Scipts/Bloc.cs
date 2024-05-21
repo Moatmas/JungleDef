@@ -31,8 +31,6 @@ public class Bloc : MonoBehaviour
         return transform.position + positionOffset;
     }
 
-    
-
     void OnMouseDown()
     {
         
@@ -81,6 +79,19 @@ public class Bloc : MonoBehaviour
         isUpgraded = true;
 
         Debug.Log("Tour ameliorée, argent restant : " + PlayerStats.Money);
+    }
+
+    public void SellTurret()
+    {
+        PlayerStats.Money += turretBlueprint.GetSellAmount();
+
+        GameObject effect = (GameObject)Instantiate(buildManager.sellEffect, getBuildPosition(), Quaternion.identity);
+        Destroy(effect, 5f);
+
+        Destroy(turret);
+        turretBlueprint = null;
+
+        Debug.Log("Tour vendue, argent restant : " + PlayerStats.Money);
     }
 
     void OnMouseOver()
