@@ -51,5 +51,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "jung def.sln"
+    "jung def.sln=======dotnet.defaultSolution": "JungleDef.sln>>>>>>>18dfce0ce2e5d7abdfdc404d079c2608fc53de7f",
+    "dotnet.defaultSolution": "JungleDef.sln"
 }

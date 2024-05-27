@@ -8,7 +8,7 @@ public class BuildManager : MonoBehaviour
     {   
         if (instance != null)
         {
-            Debug.Log("Il y a déjà un menu de construction");
+            Debug.Log("Il y a deja un menu de construction");
             return;
         }
         instance = this;
@@ -17,18 +17,43 @@ public class BuildManager : MonoBehaviour
 
     public GameObject standardTurretAsset;
     public GameObject missileTurretAsset;
+    public GameObject sellEffect;
 
-   
 
-    private GameObject turretToBuild;
+    private TurretBlueprint turretToBuild;
+    private Bloc selectedBloc;
+    public SelectUI selectUI;
 
-    public GameObject GetTurretToBuild()
+    public bool CanBuild { get { return turretToBuild != null; } }
+  
+    public void SelectBloc(Bloc bloc)
     {
-        return turretToBuild;
+        if(selectedBloc == bloc)
+        {
+            DeselectBloc();
+            return;
+        }
+        selectedBloc = bloc;
+        turretToBuild = null;
+
+        selectUI.SetTarget(bloc);
     }
 
-    public void SetTurretToBuild(GameObject turret)
+    public void DeselectBloc()
+    {
+        selectedBloc = null;
+        selectUI.Hide();
+    }
+
+
+    public void SelectTurretToBuild (TurretBlueprint turret)
     {
         turretToBuild = turret;
+        DeselectBloc();
+    }
+
+    public TurretBlueprint GetTurretToBuild()
+    {
+        return turretToBuild;
     }
 }
