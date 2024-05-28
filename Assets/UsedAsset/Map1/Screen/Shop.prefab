@@ -137,8 +137,8 @@ MonoBehaviour:
   trap1:
     prefab: {fileID: 7635804152928283909, guid: ebbf55e66b937ca4c81eb3d9af946db7, type: 3}
     cost: 50
-    upgradedTurret: {fileID: 0}
-    upgradeCost: 0
+    upgradedTurret: {fileID: 9106561336904593491, guid: 02eed553817faf44d852a9348cffaf18, type: 3}
+    upgradeCost: 75
 --- !u!1001 &1020899263931826937
 PrefabInstance:
   m_ObjectHideFlags: 0

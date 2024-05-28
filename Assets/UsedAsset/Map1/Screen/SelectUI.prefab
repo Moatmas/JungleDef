@@ -35,10 +35,10 @@ RectTransform:
   - {fileID: 3312965992069847111}
   m_Father: {fileID: 7029807809153231401}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 118.59689, y: -20.576794}
+  m_SizeDelta: {x: 79.0646, y: 41.153587}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8287959143837287588
 CanvasRenderer:
@@ -124,7 +124,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4967393488071808663}
         m_TargetAssemblyTypeName: SelectUI, Assembly-CSharp
-        m_MethodName: Upgrade
+        m_MethodName: Sell
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -504,13 +504,13 @@ GameObject:
   - component: {fileID: 4861062228030126}
   - component: {fileID: 6160783637221314968}
   - component: {fileID: 770457272818852856}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1847237795287889457
 RectTransform:
   m_ObjectHideFlags: 0
@@ -577,7 +577,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &4861062228030126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -842,10 +842,10 @@ RectTransform:
   - {fileID: 5438904915619675880}
   m_Father: {fileID: 7029807809153231401}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 39.5323, y: -20.576794}
+  m_SizeDelta: {x: 79.0646, y: 41.153587}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7182442949941245299
 CanvasRenderer:
@@ -1029,7 +1029,7 @@ GameObject:
   - component: {fileID: 4184809295162645764}
   - component: {fileID: 3284156587196660027}
   m_Layer: 1
-  m_Name: Cost
+  m_Name: Amount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1347,6 +1347,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upgradeCost: {fileID: 7656886077168701263}
-  sellAmount: {fileID: 0}
+  sellAmount: {fileID: 4184809295162645764}
   upgradeButton: {fileID: 8578369675033912443}
   ui: {fileID: 1519006038360350005}
