@@ -189,7 +189,8 @@ GameObject:
   - component: {fileID: 3239239926344990344}
   - component: {fileID: 6194764381572809702}
   - component: {fileID: 3614125269589975418}
-  - component: {fileID: -7374854873618418213}
+  - component: {fileID: -7903600136056663769}
+  - component: {fileID: -3543200878776915228}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -284,7 +285,24 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-7374854873618418213
+--- !u!114 &-7903600136056663769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8409104490229527137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad0a73b93dc59c549b4a06fb1fc7ed8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startSpeed: 15
+  speed: 15
+  Starthealth: 100
+  health: 100
+  healthbar: {fileID: 3764198111411767810}
+--- !u!114 &-3543200878776915228
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -296,10 +314,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d287b0fba9a03ef4daa3f35a1e2d62a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  Starthealth: 100
-  health: 100
-  healthbar: {fileID: 3764198111411767810}
 --- !u!1 &8596825417476117102
 GameObject:
   m_ObjectHideFlags: 0
