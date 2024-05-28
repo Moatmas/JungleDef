@@ -49,7 +49,7 @@ MonoBehaviour:
   speed: 40
   explosionRadius: 7
   impactEffect: {fileID: 1420333027697502430, guid: d5b068b64e6819f4fbb082de0f9dc012, type: 3}
-  damage: 50
+  damage: 25
 --- !u!136 &7787260408041227702
 CapsuleCollider:
   m_ObjectHideFlags: 0
