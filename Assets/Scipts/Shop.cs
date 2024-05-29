@@ -33,7 +33,7 @@ public class Shop : MonoBehaviour
 
     public void SelectTrap1Turret()
     {
-        Debug.Log("Tour ralentissante selectionnee");
+        Debug.Log("Piège scie tournante selectionnee");
         buildManager.SelectTurretToBuild(trap1);
 
     }
