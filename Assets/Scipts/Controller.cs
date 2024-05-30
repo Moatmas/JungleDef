@@ -4,6 +4,7 @@
     using PlayFab;
     using PlayFab.ClientModels;
     using System;
+    using UnityEngine.SceneManagement;
 
     public class AuthenticationManager : MonoBehaviour
     {
@@ -125,6 +126,7 @@
         Debug.Log("Utilisateur connecté avec succès : " + result.PlayFabId);
         OpenMenuPanel(); // Open the menu panel upon successful login
         ResetInputFields();
+        SceneManager.LoadSceneAsync("MenuPreGame");
     }
 
    private void OnLoginFailure(PlayFabError error)
