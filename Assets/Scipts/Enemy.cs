@@ -12,6 +12,7 @@ public class Enemy : MonoBehaviour
 
     public float Starthealth = 100f;
     public float health;
+    public int moneyOnKill = 10;
     public Image healthbar;
 
     private void Start()
@@ -38,6 +39,7 @@ public class Enemy : MonoBehaviour
 
     private void Die()
     {
+        PlayerStats.Money += moneyOnKill;
         Destroy(gameObject);
     }
 
