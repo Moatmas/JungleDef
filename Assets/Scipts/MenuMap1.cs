@@ -25,7 +25,7 @@ public class MenuMap1 : MonoBehaviour
 
     public void Menu ()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("MenuPreGame");
     }
 
 
