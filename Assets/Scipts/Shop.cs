@@ -40,7 +40,7 @@ public class Shop : MonoBehaviour
 
         PanelstandardTurret.SetActive(true);
         NomStandart.text = "Gorille à Sarbacane";
-        Descriptionstandart.text = "Prix : 50\nEffet : inflige des dégats à une troupe unique\nDégat :";
+        Descriptionstandart.text = "Prix : 75\nEffet : inflige des dégats à une troupe unique\nDégat :";
         PanelMissileTurretItem.SetActive(false);
         PanelSlowTurretItem.SetActive(false);
         PanelTrapTurretItem.SetActive(false);
