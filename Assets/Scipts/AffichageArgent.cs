@@ -10,14 +10,11 @@ public class AffichageArgent : MonoBehaviour
     
     void Start()
     {
-        
+        DescriptionArgent.text = (PlayerStats.Money.ToString() + " $") ;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (DescriptionArgent != null){
-            DescriptionArgent.text = PlayerStats.Money.ToString() + " €";
-        }
+        DescriptionArgent.text = (PlayerStats.Money.ToString() + " $") ;
     }
 }
