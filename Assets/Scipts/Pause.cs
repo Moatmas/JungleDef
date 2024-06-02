@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class PauseManager : MonoBehaviour
 {
-    public GameObject pauseMenuUI; // Le menu des paramètres
-    private bool isPaused = false;
+    //public GameObject pauseMenuUI; // Le menu des paramètres
+    public bool isPaused = false;
 
     void Update()
     {
@@ -19,14 +19,14 @@ public class PauseManager : MonoBehaviour
 
     public void Pause()
     {
-        pauseMenuUI.SetActive(true);
+        //pauseMenuUI.SetActive(true);
         Time.timeScale = 0f; // Met le jeu en pause
         isPaused = true;
     }
 
     public void Resume()
     {
-        pauseMenuUI.SetActive(false);
+        //pauseMenuUI.SetActive(false);
         Time.timeScale = 1f; // Reprend le jeu
         isPaused = false;
     }
