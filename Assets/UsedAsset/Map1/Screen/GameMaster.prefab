@@ -77,3 +77,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startMoney: 500
+  startLives: 20

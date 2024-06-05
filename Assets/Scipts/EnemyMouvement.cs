@@ -35,6 +35,7 @@ public class EnemyMouvement : MonoBehaviour
     {
         if(wavepointIndex >= Waypoints.points.Length - 1)
         {
+            PlayerStats.Lives--;
             Destroy(gameObject);
             return;
         }
