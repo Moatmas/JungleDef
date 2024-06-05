@@ -15,10 +15,17 @@ public class Enemy : MonoBehaviour
     public int moneyOnKill = 10;
     public Image healthbar;
 
+    private WaveSpawner waveSpawner;
+
     private void Start()
     {
         speed = startSpeed;
         health = Starthealth;
+        waveSpawner = GameObject.FindObjectOfType<WaveSpawner>();
+        if (waveSpawner != null)
+        {
+            waveSpawner.enemiesAlive++;
+        }
     }
 
     public void TakeDamage(float amount)
@@ -40,6 +47,7 @@ public class Enemy : MonoBehaviour
     private void Die()
     {
         PlayerStats.Money += moneyOnKill;
+        waveSpawner.enemiesAlive--;
         Destroy(gameObject);
     }
 

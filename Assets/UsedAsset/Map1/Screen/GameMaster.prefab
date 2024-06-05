@@ -46,10 +46,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9cedffff10bf6147a3bf4b6b8c7af2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
-  spawnPoint: {fileID: 0}
+  waves:
+  - countEnemy1: 3
+    countEnemy2: 0
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 0}
+  - countEnemy1: 5
+    countEnemy2: 0
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 0}
+  - countEnemy1: 8
+    countEnemy2: 0
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 0}
+  - countEnemy1: 10
+    countEnemy2: 0
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 0}
+  - countEnemy1: 12
+    countEnemy2: 0
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 0}
+  - countEnemy1: 13
+    countEnemy2: 0
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 0}
+  - countEnemy1: 15
+    countEnemy2: 0
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 0}
+  - countEnemy1: 16
+    countEnemy2: 0
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 0}
+  - countEnemy1: 18
+    countEnemy2: 0
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 0}
+  - countEnemy1: 20
+    countEnemy2: 0
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 0}
+  - countEnemy1: 21
+    countEnemy2: 0
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 0}
+  - countEnemy1: 23
+    countEnemy2: 0
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 0}
+  spawnPoint: {fileID: 5000402302050740101, guid: d2c34fe4c4c698e4f8a41569fef9d1a6, type: 3}
   timeBetweenWaves: 5
   waveCountDownText: {fileID: 0}
+  pauseManager: {fileID: 0}
+  enemiesAlive: -251
 --- !u!114 &272273298410595246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63,7 +113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sellEffect: {fileID: 8387399027378844438, guid: 1b8900e9f347fc747adfadf0fef6a093, type: 3}
-  selectUI: {fileID: 4967393488071808663, guid: b30da702ae4ce414eb14db52c0d6991f, type: 3}
+  selectUI: {fileID: 0}
 --- !u!114 &44181183354536741
 MonoBehaviour:
   m_ObjectHideFlags: 0

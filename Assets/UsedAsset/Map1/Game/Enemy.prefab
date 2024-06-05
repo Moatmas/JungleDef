@@ -302,7 +302,9 @@ MonoBehaviour:
   speed: 15
   Starthealth: 100
   health: 100
+  moneyOnKill: 10
   healthbar: {fileID: 3764198111411767810}
+  waveSpawner: {fileID: 4196630092393853075, guid: d1169b3447e482c438c1c9de77c6e6ea, type: 3}
 --- !u!114 &-3543200878776915228
 MonoBehaviour:
   m_ObjectHideFlags: 0
