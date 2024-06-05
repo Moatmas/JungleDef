@@ -96,7 +96,7 @@ MonoBehaviour:
     enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
     enemyPrefab2: {fileID: 0}
   spawnPoint: {fileID: 5000402302050740101, guid: d2c34fe4c4c698e4f8a41569fef9d1a6, type: 3}
-  timeBetweenWaves: 5
+  timeBetweenWaves: 10
   waveCountDownText: {fileID: 0}
   pauseManager: {fileID: 0}
   enemiesAlive: -251
