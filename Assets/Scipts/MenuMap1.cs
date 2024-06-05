@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Linq;
+using UnityEngine.UI;
 
 public class MenuMap1 : MonoBehaviour
 {
 
     public SauvegardeScene sauvegardeScene;
     public PauseManager pauseManager;
+
+    public GameObject button;
     void Start()
     {
         
@@ -36,6 +39,11 @@ public class MenuMap1 : MonoBehaviour
         SceneManager.LoadScene("MenuPreGame");
     }
 
+    public void MenuGameOver (){
+        SceneManager.LoadScene("MenuPreGame");
+        button.SetActive(false);
+
+    }
 
 
 }
