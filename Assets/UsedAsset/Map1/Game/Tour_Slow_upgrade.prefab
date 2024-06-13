@@ -107,8 +107,8 @@ MonoBehaviour:
   bulletAsset: {fileID: 0}
   fireRate: 1
   useLaser: 1
-  damageOverTime: 25
-  slowPct: 0.6
+  damageOverTime: 27
+  slowPct: 0.7
   lineRenderer: {fileID: 1416462954677367195}
   impactEffect: {fileID: 1661443712533364112}
   enemyTag: Enemy

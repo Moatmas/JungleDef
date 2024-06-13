@@ -14,6 +14,7 @@ public class WaveSpawner : MonoBehaviour
         public Transform enemyPrefab2;
         public Transform enemyPrefab3;
         public float timeBeforeNextWave;
+        public float coef =1f;
 
     }
 
@@ -74,26 +75,31 @@ public class WaveSpawner : MonoBehaviour
         Wave currentWave = waves[waveIndex];
         waveIndex++;
 
-        StartCoroutine(SpawnEnemyType(currentWave.countEnemy1, currentWave.enemyPrefab1, delayEnemy1, 0.3f));
-        StartCoroutine(SpawnEnemyType(currentWave.countEnemy2, currentWave.enemyPrefab2, delayEnemy2, 0.4f));
-        StartCoroutine(SpawnEnemyType(currentWave.countEnemy3, currentWave.enemyPrefab3, delayEnemy3, 0.6f));
+        StartCoroutine(SpawnEnemyType(currentWave.countEnemy1, currentWave.enemyPrefab1, delayEnemy1, 0.3f, currentWave.coef));
+        StartCoroutine(SpawnEnemyType(currentWave.countEnemy2, currentWave.enemyPrefab2, delayEnemy2, 0.4f, currentWave.coef));
+        StartCoroutine(SpawnEnemyType(currentWave.countEnemy3, currentWave.enemyPrefab3, delayEnemy3, 0.6f, currentWave.coef));
 
         yield return null;
     }
 
-    IEnumerator SpawnEnemyType(int count, Transform enemyPrefab, float initialDelay, float spawnInterval)
+    IEnumerator SpawnEnemyType(int count, Transform enemyPrefab, float initialDelay, float spawnInterval, float coef)
     {
         yield return new WaitForSeconds(initialDelay);
 
         for (int i = 0; i < count; i++)
         {
-            SpawnEnemy(enemyPrefab);
+            SpawnEnemy(enemyPrefab, coef);
             yield return new WaitForSeconds(spawnInterval);
         }
     }
 
-    void SpawnEnemy(Transform enemyPrefab)
+    void SpawnEnemy(Transform enemyPrefab, float coef)
     {
-        Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+        GameObject enemyInstance = Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation).gameObject;
+        Enemy enemyScript = enemyInstance.GetComponent<Enemy>();
+        if (enemyScript != null)
+        {
+            enemyScript.ApplyWaveCoef(coef);
+        }
     }
 }

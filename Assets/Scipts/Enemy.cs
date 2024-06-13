@@ -28,6 +28,14 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    public void ApplyWaveCoef(float coef)
+    {
+        startSpeed *= (1 + (coef/3));
+        Starthealth *= (1 + (coef)) ;
+        health = Starthealth; 
+    }
+
+
     public void TakeDamage(float amount)
     {
         health -= amount;

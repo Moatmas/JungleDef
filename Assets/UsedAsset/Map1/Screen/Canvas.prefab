@@ -5292,13 +5292,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   standardTurret:
     prefab: {fileID: 1521401170767942808, guid: 08c914209a529cb4d8cca6fd06182b30, type: 3}
-    cost: 90
+    cost: 85
     upgradedTurret: {fileID: 1521401170767942808, guid: a7086bc63f44d5b479fdb4e032e29f30, type: 3}
     upgradeCost: 125
     bullet: {fileID: -4256389444348413193, guid: b74bce860b7e12540b6848240f116317, type: 3}
   missileLauncher:
     prefab: {fileID: 61456485529120384, guid: 758a0484b342da644acc02cf828a7760, type: 3}
-    cost: 160
+    cost: 150
     upgradedTurret: {fileID: 61456485529120384, guid: bc5898994bf60a8469dac9f9bf2be4ff, type: 3}
     upgradeCost: 200
     bullet: {fileID: -1195880426644738334, guid: 03bb2ed47fecb8f49a6feaa766c8732d, type: 3}

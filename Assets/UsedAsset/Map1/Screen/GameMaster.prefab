@@ -54,6 +54,7 @@ MonoBehaviour:
     enemyPrefab2: {fileID: 0}
     enemyPrefab3: {fileID: 0}
     timeBeforeNextWave: 10
+    coef: 0
   - countEnemy1: 6
     countEnemy2: 0
     countEnemy3: 0
@@ -61,6 +62,7 @@ MonoBehaviour:
     enemyPrefab2: {fileID: 0}
     enemyPrefab3: {fileID: 0}
     timeBeforeNextWave: 10
+    coef: 0
   - countEnemy1: 9
     countEnemy2: 0
     countEnemy3: 0
@@ -68,6 +70,7 @@ MonoBehaviour:
     enemyPrefab2: {fileID: 0}
     enemyPrefab3: {fileID: 0}
     timeBeforeNextWave: 10
+    coef: 0
   - countEnemy1: 12
     countEnemy2: 0
     countEnemy3: 0
@@ -75,6 +78,7 @@ MonoBehaviour:
     enemyPrefab2: {fileID: 0}
     enemyPrefab3: {fileID: 0}
     timeBeforeNextWave: 10
+    coef: 0
   - countEnemy1: 10
     countEnemy2: 2
     countEnemy3: 0
@@ -82,6 +86,7 @@ MonoBehaviour:
     enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
     enemyPrefab3: {fileID: 0}
     timeBeforeNextWave: 10
+    coef: 0
   - countEnemy1: 10
     countEnemy2: 4
     countEnemy3: 0
@@ -89,6 +94,7 @@ MonoBehaviour:
     enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
     enemyPrefab3: {fileID: 0}
     timeBeforeNextWave: 15
+    coef: 0
   - countEnemy1: 12
     countEnemy2: 5
     countEnemy3: 0
@@ -96,6 +102,7 @@ MonoBehaviour:
     enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
     enemyPrefab3: {fileID: 0}
     timeBeforeNextWave: 15
+    coef: 0
   - countEnemy1: 15
     countEnemy2: 5
     countEnemy3: 0
@@ -103,6 +110,7 @@ MonoBehaviour:
     enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
     enemyPrefab3: {fileID: 0}
     timeBeforeNextWave: 15
+    coef: 0
   - countEnemy1: 18
     countEnemy2: 7
     countEnemy3: 0
@@ -110,6 +118,7 @@ MonoBehaviour:
     enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
     enemyPrefab3: {fileID: 0}
     timeBeforeNextWave: 15
+    coef: 0
   - countEnemy1: 15
     countEnemy2: 5
     countEnemy3: 3
@@ -117,6 +126,7 @@ MonoBehaviour:
     enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
     enemyPrefab3: {fileID: 6575779166048049339, guid: d121055d147c37f4fa733e89822ccacb, type: 3}
     timeBeforeNextWave: 15
+    coef: 0
   - countEnemy1: 12
     countEnemy2: 8
     countEnemy3: 3
@@ -124,6 +134,7 @@ MonoBehaviour:
     enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
     enemyPrefab3: {fileID: 6575779166048049339, guid: d121055d147c37f4fa733e89822ccacb, type: 3}
     timeBeforeNextWave: 20
+    coef: 0.2
   - countEnemy1: 10
     countEnemy2: 10
     countEnemy3: 6
@@ -131,6 +142,7 @@ MonoBehaviour:
     enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
     enemyPrefab3: {fileID: 6575779166048049339, guid: d121055d147c37f4fa733e89822ccacb, type: 3}
     timeBeforeNextWave: 20
+    coef: 0.2
   - countEnemy1: 8
     countEnemy2: 12
     countEnemy3: 8
@@ -138,6 +150,7 @@ MonoBehaviour:
     enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
     enemyPrefab3: {fileID: 6575779166048049339, guid: d121055d147c37f4fa733e89822ccacb, type: 3}
     timeBeforeNextWave: 20
+    coef: 0.2
   - countEnemy1: 8
     countEnemy2: 15
     countEnemy3: 10
@@ -145,6 +158,7 @@ MonoBehaviour:
     enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
     enemyPrefab3: {fileID: 6575779166048049339, guid: d121055d147c37f4fa733e89822ccacb, type: 3}
     timeBeforeNextWave: 20
+    coef: 0.3
   - countEnemy1: 5
     countEnemy2: 18
     countEnemy3: 12
@@ -152,6 +166,7 @@ MonoBehaviour:
     enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
     enemyPrefab3: {fileID: 6575779166048049339, guid: d121055d147c37f4fa733e89822ccacb, type: 3}
     timeBeforeNextWave: 20
+    coef: 0.3
   - countEnemy1: 5
     countEnemy2: 20
     countEnemy3: 15
@@ -159,6 +174,7 @@ MonoBehaviour:
     enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
     enemyPrefab3: {fileID: 6575779166048049339, guid: d121055d147c37f4fa733e89822ccacb, type: 3}
     timeBeforeNextWave: 20
+    coef: 0.3
   - countEnemy1: 5
     countEnemy2: 20
     countEnemy3: 15
@@ -166,6 +182,7 @@ MonoBehaviour:
     enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
     enemyPrefab3: {fileID: 6575779166048049339, guid: d121055d147c37f4fa733e89822ccacb, type: 3}
     timeBeforeNextWave: 25
+    coef: 0.4
   - countEnemy1: 10
     countEnemy2: 25
     countEnemy3: 15
@@ -173,6 +190,7 @@ MonoBehaviour:
     enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
     enemyPrefab3: {fileID: 6575779166048049339, guid: d121055d147c37f4fa733e89822ccacb, type: 3}
     timeBeforeNextWave: 25
+    coef: 0.4
   - countEnemy1: 10
     countEnemy2: 30
     countEnemy3: 20
@@ -180,6 +198,7 @@ MonoBehaviour:
     enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
     enemyPrefab3: {fileID: 6575779166048049339, guid: d121055d147c37f4fa733e89822ccacb, type: 3}
     timeBeforeNextWave: 25
+    coef: 0.4
   - countEnemy1: 15
     countEnemy2: 25
     countEnemy3: 20
@@ -187,10 +206,12 @@ MonoBehaviour:
     enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
     enemyPrefab3: {fileID: 6575779166048049339, guid: d121055d147c37f4fa733e89822ccacb, type: 3}
     timeBeforeNextWave: 25
+    coef: 0.5
   spawnPoint: {fileID: 5000402302050740101, guid: d2c34fe4c4c698e4f8a41569fef9d1a6, type: 3}
   waveCountDownText: {fileID: 0}
   pauseManager: {fileID: 0}
   enemiesAlive: -251
+  waveText: {fileID: 0}
 --- !u!114 &272273298410595246
 MonoBehaviour:
   m_ObjectHideFlags: 0
