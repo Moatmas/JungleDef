@@ -84,7 +84,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 12
   bulletAsset: {fileID: 351702164625203583, guid: 03bb2ed47fecb8f49a6feaa766c8732d, type: 3}
-  fireRate: 1
+  fireRate: 0.9
   useLaser: 0
   damageOverTime: 30
   slowPct: 0.5

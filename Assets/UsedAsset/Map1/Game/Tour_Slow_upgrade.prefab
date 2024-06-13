@@ -387,7 +387,7 @@ GameObject:
   - component: {fileID: 7453051810874502653}
   - component: {fileID: 1661443712533364112}
   - component: {fileID: 7557016357694545141}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: ImpactEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}

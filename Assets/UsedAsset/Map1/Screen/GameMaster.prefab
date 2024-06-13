@@ -47,56 +47,147 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waves:
-  - countEnemy1: 3
+  - countEnemy1: 4
     countEnemy2: 0
+    countEnemy3: 0
     enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
     enemyPrefab2: {fileID: 0}
-  - countEnemy1: 5
+    enemyPrefab3: {fileID: 0}
+    timeBeforeNextWave: 10
+  - countEnemy1: 6
     countEnemy2: 0
+    countEnemy3: 0
     enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
     enemyPrefab2: {fileID: 0}
-  - countEnemy1: 8
+    enemyPrefab3: {fileID: 0}
+    timeBeforeNextWave: 10
+  - countEnemy1: 9
     countEnemy2: 0
+    countEnemy3: 0
     enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
     enemyPrefab2: {fileID: 0}
-  - countEnemy1: 10
-    countEnemy2: 0
-    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
-    enemyPrefab2: {fileID: 0}
+    enemyPrefab3: {fileID: 0}
+    timeBeforeNextWave: 10
   - countEnemy1: 12
     countEnemy2: 0
+    countEnemy3: 0
     enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
     enemyPrefab2: {fileID: 0}
-  - countEnemy1: 13
-    countEnemy2: 0
+    enemyPrefab3: {fileID: 0}
+    timeBeforeNextWave: 10
+  - countEnemy1: 10
+    countEnemy2: 2
+    countEnemy3: 0
     enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
-    enemyPrefab2: {fileID: 0}
+    enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
+    enemyPrefab3: {fileID: 0}
+    timeBeforeNextWave: 10
+  - countEnemy1: 10
+    countEnemy2: 4
+    countEnemy3: 0
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
+    enemyPrefab3: {fileID: 0}
+    timeBeforeNextWave: 15
+  - countEnemy1: 12
+    countEnemy2: 5
+    countEnemy3: 0
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
+    enemyPrefab3: {fileID: 0}
+    timeBeforeNextWave: 15
   - countEnemy1: 15
-    countEnemy2: 0
+    countEnemy2: 5
+    countEnemy3: 0
     enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
-    enemyPrefab2: {fileID: 0}
-  - countEnemy1: 16
-    countEnemy2: 0
-    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
-    enemyPrefab2: {fileID: 0}
+    enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
+    enemyPrefab3: {fileID: 0}
+    timeBeforeNextWave: 15
   - countEnemy1: 18
-    countEnemy2: 0
+    countEnemy2: 7
+    countEnemy3: 0
     enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
-    enemyPrefab2: {fileID: 0}
-  - countEnemy1: 20
-    countEnemy2: 0
+    enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
+    enemyPrefab3: {fileID: 0}
+    timeBeforeNextWave: 15
+  - countEnemy1: 15
+    countEnemy2: 5
+    countEnemy3: 3
     enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
-    enemyPrefab2: {fileID: 0}
-  - countEnemy1: 21
-    countEnemy2: 0
+    enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
+    enemyPrefab3: {fileID: 6575779166048049339, guid: d121055d147c37f4fa733e89822ccacb, type: 3}
+    timeBeforeNextWave: 15
+  - countEnemy1: 12
+    countEnemy2: 8
+    countEnemy3: 3
     enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
-    enemyPrefab2: {fileID: 0}
-  - countEnemy1: 23
-    countEnemy2: 0
+    enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
+    enemyPrefab3: {fileID: 6575779166048049339, guid: d121055d147c37f4fa733e89822ccacb, type: 3}
+    timeBeforeNextWave: 20
+  - countEnemy1: 10
+    countEnemy2: 10
+    countEnemy3: 6
     enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
-    enemyPrefab2: {fileID: 0}
+    enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
+    enemyPrefab3: {fileID: 6575779166048049339, guid: d121055d147c37f4fa733e89822ccacb, type: 3}
+    timeBeforeNextWave: 20
+  - countEnemy1: 8
+    countEnemy2: 12
+    countEnemy3: 8
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
+    enemyPrefab3: {fileID: 6575779166048049339, guid: d121055d147c37f4fa733e89822ccacb, type: 3}
+    timeBeforeNextWave: 20
+  - countEnemy1: 8
+    countEnemy2: 15
+    countEnemy3: 10
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
+    enemyPrefab3: {fileID: 6575779166048049339, guid: d121055d147c37f4fa733e89822ccacb, type: 3}
+    timeBeforeNextWave: 20
+  - countEnemy1: 5
+    countEnemy2: 18
+    countEnemy3: 12
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
+    enemyPrefab3: {fileID: 6575779166048049339, guid: d121055d147c37f4fa733e89822ccacb, type: 3}
+    timeBeforeNextWave: 20
+  - countEnemy1: 5
+    countEnemy2: 20
+    countEnemy3: 15
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
+    enemyPrefab3: {fileID: 6575779166048049339, guid: d121055d147c37f4fa733e89822ccacb, type: 3}
+    timeBeforeNextWave: 20
+  - countEnemy1: 5
+    countEnemy2: 20
+    countEnemy3: 15
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
+    enemyPrefab3: {fileID: 6575779166048049339, guid: d121055d147c37f4fa733e89822ccacb, type: 3}
+    timeBeforeNextWave: 25
+  - countEnemy1: 10
+    countEnemy2: 25
+    countEnemy3: 15
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
+    enemyPrefab3: {fileID: 6575779166048049339, guid: d121055d147c37f4fa733e89822ccacb, type: 3}
+    timeBeforeNextWave: 25
+  - countEnemy1: 10
+    countEnemy2: 30
+    countEnemy3: 20
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
+    enemyPrefab3: {fileID: 6575779166048049339, guid: d121055d147c37f4fa733e89822ccacb, type: 3}
+    timeBeforeNextWave: 25
+  - countEnemy1: 15
+    countEnemy2: 25
+    countEnemy3: 20
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
+    enemyPrefab3: {fileID: 6575779166048049339, guid: d121055d147c37f4fa733e89822ccacb, type: 3}
+    timeBeforeNextWave: 25
   spawnPoint: {fileID: 5000402302050740101, guid: d2c34fe4c4c698e4f8a41569fef9d1a6, type: 3}
-  timeBetweenWaves: 10
   waveCountDownText: {fileID: 0}
   pauseManager: {fileID: 0}
   enemiesAlive: -251
@@ -126,5 +217,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9e39366f33d049448272b7f80d1de67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 500
+  startMoney: 300
   startLives: 20

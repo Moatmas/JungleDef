@@ -83,11 +83,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 16
-  fireRate: 1.5
+  bulletAsset: {fileID: 351702164625203583, guid: 03bb2ed47fecb8f49a6feaa766c8732d, type: 3}
+  fireRate: 1.1
+  useLaser: 0
+  damageOverTime: 30
+  slowPct: 0.5
+  lineRenderer: {fileID: 0}
+  impactEffect: {fileID: 0}
   enemyTag: Enemy
   touretToRotate: {fileID: 4144490219893340655}
   turnSpeed: 10
-  bulletAsset: {fileID: 351702164625203583, guid: 03bb2ed47fecb8f49a6feaa766c8732d, type: 3}
   firePoint: {fileID: 377333025169308410}
 --- !u!95 &7399626898526652962
 Animator:
