@@ -40,12 +40,12 @@ public class WaveSpawner : MonoBehaviour
 
     private void Start()
     {
-        enemiesAlive = 0;
+        InvokeRepeating(nameof(CheckEnemiesAlive), 0.5f, 0.5f);
         countDown = waves[0].timeBeforeNextWave;
     }
     private void Update()
     {
-        waveText.text = "Vague " + waveIndex + "/" + waves.Length ;
+        waveText.text = "Vague " + waveIndex + "/" + (waves.Length - 1) ;
 
         if (waveIndex >= waves.Length && enemiesAlive == 0)
         {
@@ -102,4 +102,9 @@ public class WaveSpawner : MonoBehaviour
             enemyScript.ApplyWaveCoef(coef);
         }
     }
+    void CheckEnemiesAlive()
+    {
+        enemiesAlive = GameObject.FindGameObjectsWithTag("Enemy").Length;
+    }
+
 }

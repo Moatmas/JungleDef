@@ -22,10 +22,6 @@ public class Enemy : MonoBehaviour
         speed = startSpeed;
         health = Starthealth;
         waveSpawner = GameObject.FindObjectOfType<WaveSpawner>();
-        if (waveSpawner != null)
-        {
-            waveSpawner.enemiesAlive++;
-        }
     }
 
     public void ApplyWaveCoef(float coef)
@@ -55,7 +51,6 @@ public class Enemy : MonoBehaviour
     private void Die()
     {
         PlayerStats.Money += moneyOnKill;
-        waveSpawner.enemiesAlive--;
         Destroy(gameObject);
     }
 

@@ -198,10 +198,18 @@ MonoBehaviour:
     enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
     enemyPrefab3: {fileID: 6575779166048049339, guid: d121055d147c37f4fa733e89822ccacb, type: 3}
     timeBeforeNextWave: 25
-    coef: 0.4
+    coef: 0.5
   - countEnemy1: 15
     countEnemy2: 25
     countEnemy3: 20
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
+    enemyPrefab3: {fileID: 6575779166048049339, guid: d121055d147c37f4fa733e89822ccacb, type: 3}
+    timeBeforeNextWave: 25
+    coef: 0.6
+  - countEnemy1: 0
+    countEnemy2: 0
+    countEnemy3: 0
     enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
     enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
     enemyPrefab3: {fileID: 6575779166048049339, guid: d121055d147c37f4fa733e89822ccacb, type: 3}
