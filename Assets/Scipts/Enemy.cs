@@ -14,6 +14,7 @@ public class Enemy : MonoBehaviour
     public float Starthealth = 100f;
     public float health;
     public int moneyOnKill = 10;
+    public int scoreOnKill = 15;
     public Image healthbar;
 
     private WaveSpawner waveSpawner;
@@ -67,6 +68,7 @@ public class Enemy : MonoBehaviour
     private void Die()
     {
         PlayerStats.Money += moneyOnKill;
+        PlayerStats.Score += scoreOnKill;
         Destroy(gameObject);
     }
 

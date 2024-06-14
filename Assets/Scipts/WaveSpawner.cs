@@ -55,6 +55,8 @@ public class WaveSpawner : MonoBehaviour
         if (waveIndex >= waves.Length && enemiesAlive == 0)
         {
             Debug.Log("Toutes les vagues ont �t� compl�t�es !");
+            PlayFabManager.Instance.SendScore(PlayerStats.Score); 
+            PlayFabManager.Instance.GetLeaderboard(); 
             pauseManager.Pause();
             canvas.SetActive(true);
             return;
