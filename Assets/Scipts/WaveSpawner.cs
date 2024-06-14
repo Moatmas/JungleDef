@@ -35,11 +35,15 @@ public class WaveSpawner : MonoBehaviour
     public PauseManager pauseManager;
 
     public int enemiesAlive;
+    private int difficultyLevel;
 
     public TextMeshProUGUI waveText;
 
+
+
     private void Start()
     {
+        difficultyLevel = GameSettings.Difficulty;
         InvokeRepeating(nameof(CheckEnemiesAlive), 0.5f, 0.5f);
         countDown = waves[0].timeBeforeNextWave;
     }
@@ -99,7 +103,7 @@ public class WaveSpawner : MonoBehaviour
         Enemy enemyScript = enemyInstance.GetComponent<Enemy>();
         if (enemyScript != null)
         {
-            enemyScript.ApplyWaveCoef(coef);
+            enemyScript.ApplyWaveCoef(coef, difficultyLevel);
         }
     }
     void CheckEnemiesAlive()

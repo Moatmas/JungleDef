@@ -5951,13 +5951,13 @@ GameObject:
   - component: {fileID: 5972643013093050671}
   - component: {fileID: 3384581810145464932}
   - component: {fileID: 1182261326396258170}
-  m_Layer: 1
+  m_Layer: 0
   m_Name: CanvasGameOver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &40621153497244039
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6055,7 +6055,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sauvegardeScene: {fileID: 0}
   pauseManager: {fileID: 0}
-  button: {fileID: 0}
+  button: {fileID: 2245473038005929026}
 --- !u!1 &6441127625591568097
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,6 +2,7 @@ using Unity.VisualScripting;
 using UnityEngine.UI;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
+using static WaveSpawner;
 
 public class Enemy : MonoBehaviour
 {
@@ -24,11 +25,26 @@ public class Enemy : MonoBehaviour
         waveSpawner = GameObject.FindObjectOfType<WaveSpawner>();
     }
 
-    public void ApplyWaveCoef(float coef)
+    public void ApplyWaveCoef(float coef, int difficulty)
     {
-        startSpeed *= (1 + (coef/3));
-        Starthealth *= (1 + (coef)) ;
-        health = Starthealth; 
+        float difficultyCoefSpeed = 1f;
+        float difficultyCoefHealth =1f;
+        switch (difficulty)
+        {
+            case 0:
+                difficultyCoefHealth = 0.75f;
+                difficultyCoefSpeed = 0.9f;
+                break;
+            case 1:
+                difficultyCoefHealth = 0.9f;
+                difficultyCoefSpeed = 0.95f;
+                break;
+
+        }
+        startSpeed *= (1 + (coef/3))* difficultyCoefSpeed;
+        Starthealth *= (1 + (coef)) * difficultyCoefHealth;
+        health = Starthealth;
+       
     }
 
 
