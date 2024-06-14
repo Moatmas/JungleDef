@@ -40,9 +40,9 @@ public class MenuMap1 : MonoBehaviour
     }
 
     public void MenuGameOver (){
+        pauseManager.Resume();
         SceneManager.LoadScene("MenuPreGame");
         button.SetActive(false);
-
     }
 
 

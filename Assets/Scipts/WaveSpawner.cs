@@ -38,6 +38,7 @@ public class WaveSpawner : MonoBehaviour
     private int difficultyLevel;
 
     public TextMeshProUGUI waveText;
+    public GameObject canvas;
 
 
 
@@ -53,8 +54,9 @@ public class WaveSpawner : MonoBehaviour
 
         if (waveIndex >= waves.Length && enemiesAlive == 0)
         {
-            Debug.Log("Toutes les vagues ont été complétées !");
+            Debug.Log("Toutes les vagues ont ï¿½tï¿½ complï¿½tï¿½es !");
             pauseManager.Pause();
+            canvas.SetActive(true);
             return;
         }
 

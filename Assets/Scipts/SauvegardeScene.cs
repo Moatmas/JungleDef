@@ -9,7 +9,8 @@ public class SauvegardeScene : MonoBehaviour
     public MenuMap1 menuMap1;
     public string saveFileName = "sceneData.json";
 
-    public List<GameObject> objectPrefabs; // Liste de préfabs d'objets que vous pourriez recréer
+    // Liste de préfabs d'objets que vous pourriez recréer
+    public List<GameObject> objectPrefabs;
     private Dictionary<string, GameObject> prefabDictionary;
     private SceneData sceneData;
 
@@ -55,7 +56,7 @@ public class SauvegardeScene : MonoBehaviour
     public void SaveScene(int saveSlot)
     {
         SceneData sceneData = new SceneData();
-        GameObject[] allObjects = SceneManager.GetActiveScene().GetRootGameObjects();
+        GameObject[] allObjects = SceneUtils.GetAllObjectsInScene();
 
         foreach (GameObject obj in allObjects)
         {
@@ -107,7 +108,7 @@ public class SauvegardeScene : MonoBehaviour
             SceneManager.sceneLoaded += OnSceneLoaded;
 
             // Charger la scène Map1
-            SceneManager.LoadScene("Map1");
+            SceneManager.LoadScene(sceneData.menuMap1Data.currentSceneName);
 
             Debug.Log("Scene loaded from " + savePath);
         }
