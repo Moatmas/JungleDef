@@ -24,7 +24,7 @@ public class WaveSpawner : MonoBehaviour
     private float delayEnemy3 = 0.5f;
 
     public Wave[] waves;
-    private int waveIndex = 19;
+    private int waveIndex = 0;
 
 
     public Transform spawnPoint;

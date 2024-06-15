@@ -5,13 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class Play : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
@@ -19,7 +17,14 @@ public class Play : MonoBehaviour
 
     public void BoutonPlay()
     {
-        SceneManager.LoadSceneAsync("Map1");
+        if (GameSettings.Map == 0)
+        {
+            SceneManager.LoadSceneAsync("Map1");
+        }
+        else if (GameSettings.Map == 1)
+        {
+            SceneManager.LoadSceneAsync("Map2");
+        }
     }
 
     public void deconnection()
@@ -29,7 +34,7 @@ public class Play : MonoBehaviour
 
     public void Quitter()
     {
-      Debug.Log("Quitter le jeu!");
-      Application.Quit();  
+        Debug.Log("Quitter le jeu!");
+        Application.Quit();  
     }
 }
