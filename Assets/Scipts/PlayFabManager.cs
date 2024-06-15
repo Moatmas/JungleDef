@@ -3,10 +3,10 @@ using PlayFab.ClientModels;
 using UnityEngine;
 using System.Collections.Generic;
 
-
 public class PlayFabManager : MonoBehaviour
 {
     public static PlayFabManager Instance;
+    public ScoreboardUI scoreboardUI; // Ajoutez cette ligne pour faire référence à ScoreboardUI
 
     private void Awake()
     {
@@ -67,6 +67,14 @@ public class PlayFabManager : MonoBehaviour
         {
             Debug.Log(string.Format("Position: {0} PlayFabId: {1} DisplayName: {2} StatValue: {3}",
                 item.Position, item.PlayFabId, item.DisplayName, item.StatValue));
+        }
+        if (scoreboardUI != null)
+        {
+            scoreboardUI.UpdateLeaderboard(result);
+        }
+        else
+        {
+            Debug.LogError("ScoreboardUI reference is not set in PlayFabManager.");
         }
     }
 

@@ -2,7 +2,6 @@ using UnityEngine;
 using System.Collections;
 using TMPro;
 
-
 public class WaveSpawner : MonoBehaviour
 {
     [System.Serializable]
@@ -25,7 +24,7 @@ public class WaveSpawner : MonoBehaviour
     private float delayEnemy3 = 0.5f;
 
     public Wave[] waves;
-    private int waveIndex = 0;
+    private int waveIndex = 19;
 
 
     public Transform spawnPoint;
