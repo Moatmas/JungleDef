@@ -1,0 +1,252 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &377412275565541710
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3267458292274416936}
+  - component: {fileID: 3352689801711507403}
+  - component: {fileID: 7989684501140774337}
+  - component: {fileID: 7659756717924931115}
+  m_Layer: 0
+  m_Name: GameMaster2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3267458292274416936
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377412275565541710}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3352689801711507403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377412275565541710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9cedffff10bf6147a3bf4b6b8c7af2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waves:
+  - countEnemy1: 4
+    countEnemy2: 0
+    countEnemy3: 0
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 0}
+    enemyPrefab3: {fileID: 0}
+    timeBeforeNextWave: 12
+    coef: 0
+  - countEnemy1: 6
+    countEnemy2: 0
+    countEnemy3: 0
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 0}
+    enemyPrefab3: {fileID: 0}
+    timeBeforeNextWave: 12
+    coef: 0
+  - countEnemy1: 9
+    countEnemy2: 0
+    countEnemy3: 0
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 0}
+    enemyPrefab3: {fileID: 0}
+    timeBeforeNextWave: 12
+    coef: 0
+  - countEnemy1: 12
+    countEnemy2: 0
+    countEnemy3: 0
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 0}
+    enemyPrefab3: {fileID: 0}
+    timeBeforeNextWave: 12
+    coef: 0
+  - countEnemy1: 10
+    countEnemy2: 2
+    countEnemy3: 0
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
+    enemyPrefab3: {fileID: 0}
+    timeBeforeNextWave: 12
+    coef: 0
+  - countEnemy1: 10
+    countEnemy2: 4
+    countEnemy3: 0
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
+    enemyPrefab3: {fileID: 0}
+    timeBeforeNextWave: 15
+    coef: 0
+  - countEnemy1: 12
+    countEnemy2: 5
+    countEnemy3: 0
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
+    enemyPrefab3: {fileID: 0}
+    timeBeforeNextWave: 15
+    coef: 0
+  - countEnemy1: 15
+    countEnemy2: 5
+    countEnemy3: 0
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
+    enemyPrefab3: {fileID: 0}
+    timeBeforeNextWave: 15
+    coef: 0
+  - countEnemy1: 18
+    countEnemy2: 7
+    countEnemy3: 0
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
+    enemyPrefab3: {fileID: 0}
+    timeBeforeNextWave: 15
+    coef: 0
+  - countEnemy1: 15
+    countEnemy2: 5
+    countEnemy3: 3
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
+    enemyPrefab3: {fileID: 6575779166048049339, guid: d121055d147c37f4fa733e89822ccacb, type: 3}
+    timeBeforeNextWave: 15
+    coef: 0
+  - countEnemy1: 12
+    countEnemy2: 8
+    countEnemy3: 3
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
+    enemyPrefab3: {fileID: 6575779166048049339, guid: d121055d147c37f4fa733e89822ccacb, type: 3}
+    timeBeforeNextWave: 20
+    coef: 0.2
+  - countEnemy1: 10
+    countEnemy2: 10
+    countEnemy3: 6
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
+    enemyPrefab3: {fileID: 6575779166048049339, guid: d121055d147c37f4fa733e89822ccacb, type: 3}
+    timeBeforeNextWave: 20
+    coef: 0.2
+  - countEnemy1: 8
+    countEnemy2: 12
+    countEnemy3: 8
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
+    enemyPrefab3: {fileID: 6575779166048049339, guid: d121055d147c37f4fa733e89822ccacb, type: 3}
+    timeBeforeNextWave: 20
+    coef: 0.2
+  - countEnemy1: 8
+    countEnemy2: 15
+    countEnemy3: 10
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
+    enemyPrefab3: {fileID: 6575779166048049339, guid: d121055d147c37f4fa733e89822ccacb, type: 3}
+    timeBeforeNextWave: 20
+    coef: 0.3
+  - countEnemy1: 5
+    countEnemy2: 18
+    countEnemy3: 12
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
+    enemyPrefab3: {fileID: 6575779166048049339, guid: d121055d147c37f4fa733e89822ccacb, type: 3}
+    timeBeforeNextWave: 20
+    coef: 0.3
+  - countEnemy1: 5
+    countEnemy2: 20
+    countEnemy3: 15
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
+    enemyPrefab3: {fileID: 6575779166048049339, guid: d121055d147c37f4fa733e89822ccacb, type: 3}
+    timeBeforeNextWave: 20
+    coef: 0.3
+  - countEnemy1: 5
+    countEnemy2: 20
+    countEnemy3: 15
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
+    enemyPrefab3: {fileID: 6575779166048049339, guid: d121055d147c37f4fa733e89822ccacb, type: 3}
+    timeBeforeNextWave: 25
+    coef: 0.4
+  - countEnemy1: 10
+    countEnemy2: 25
+    countEnemy3: 15
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
+    enemyPrefab3: {fileID: 6575779166048049339, guid: d121055d147c37f4fa733e89822ccacb, type: 3}
+    timeBeforeNextWave: 25
+    coef: 0.4
+  - countEnemy1: 10
+    countEnemy2: 30
+    countEnemy3: 20
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
+    enemyPrefab3: {fileID: 6575779166048049339, guid: d121055d147c37f4fa733e89822ccacb, type: 3}
+    timeBeforeNextWave: 25
+    coef: 0.5
+  - countEnemy1: 15
+    countEnemy2: 25
+    countEnemy3: 20
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
+    enemyPrefab3: {fileID: 6575779166048049339, guid: d121055d147c37f4fa733e89822ccacb, type: 3}
+    timeBeforeNextWave: 25
+    coef: 0.6
+  - countEnemy1: 0
+    countEnemy2: 0
+    countEnemy3: 0
+    enemyPrefab1: {fileID: 6575779166048049339, guid: 9a81bcf21793a504f9b183b9eae51651, type: 3}
+    enemyPrefab2: {fileID: 6575779166048049339, guid: 02375b1928dbb9f47a962fa4fc109709, type: 3}
+    enemyPrefab3: {fileID: 6575779166048049339, guid: d121055d147c37f4fa733e89822ccacb, type: 3}
+    timeBeforeNextWave: 25
+    coef: 0.5
+  spawnPoint: {fileID: 5000402302050740101, guid: 4c05399cbc8e1754ca59ecdac1cd2005, type: 3}
+  waveCountDownText: {fileID: 0}
+  pauseManager: {fileID: 0}
+  enemiesAlive: -251
+  waveText: {fileID: 0}
+  canvas: {fileID: 0}
+--- !u!114 &7989684501140774337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377412275565541710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34b1265c3b1feb344b4e5145d4a6bb71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sellEffect: {fileID: 8387399027378844438, guid: 1b8900e9f347fc747adfadf0fef6a093, type: 3}
+  selectUI: {fileID: 0}
+--- !u!114 &7659756717924931115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377412275565541710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9e39366f33d049448272b7f80d1de67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startMoney: 300
+  startLives: 20
+  startScore: 0
